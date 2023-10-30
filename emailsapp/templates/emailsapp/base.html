@@ -18,16 +18,28 @@
             <a href="{% url 'services'%}">Services</a>
             <a href="{% url 'contact'%}">Contact</a>
         </div>
-        <a href="{% url 'contact'%}" class="ml-2">Login</a>
+        <div class="login">
+            <a href="{% url 'contact'%}" class="ml-2">Login</a>
+        </div>
     </div>
     <main>
         {% block content %}
             <!-- Your main content goes here -->
         {% endblock %}
     </main>
-    <footer>
-        <p>&copy; {% now "Y" %} BulkEmailer</p>
-    </footer>
+    <div class="footer">
+        <div class="company-details">
+            <h2>Bulk Emailer Private Limited</h2>
+            <p>123 Main Street, City, Country</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@bulkemailer.com</p>
+        </div>
+        <div class="social-media">
+            <a href="www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="www.twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="www.linkedin"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+    </div>
 </body>
 
 </html>
