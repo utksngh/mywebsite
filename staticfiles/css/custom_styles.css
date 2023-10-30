@@ -24,6 +24,5 @@
 }
 
 body {
-    background-image: url('/static/mail.jpg');
-    background-size: cover;
+    background-image: url('/static/mail.jpg')
 }
