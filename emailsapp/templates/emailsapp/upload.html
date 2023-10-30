@@ -4,18 +4,26 @@
     Upload your file
 {% endblock %}
 {%block content %}
-{% if messages %}
+<!--{% if messages %}
 <div class="alert alert-{{ messages.tags }} alert-dismissible fade show" role="alert">
     {{ messages }}
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-{% endif %}
-    Upload the CSV Files to our Database
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit" class="btn btn-success">Upload Your CSV</button>
-    </form>
+{% endif %}-->
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <h3>Upload the CSV Files to our Database!</h3>
+                <p>
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form }}
+                        <button type="submit" class="btn btn-success">Upload Your CSV</button>
+                    </form>
+                </p>
+            </div>
+        </div>
+    </div>
 {% endblock %}

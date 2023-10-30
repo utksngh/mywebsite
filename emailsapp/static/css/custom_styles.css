@@ -9,21 +9,116 @@
     display: block; /* Display links as blocks */
     color: white; /* Text color of the links */
     text-align: center; /* Center-align text in the links */
-    padding: 14px 16px; /* Add padding to the links */
+    padding: 20px 16px; /* Add padding to the links */
     text-decoration: none; /* Remove underline from links */
 }
 
 /* Change the color of navbar links on hover */
 .navbar a:hover {
-    background-color: #ddd; /* Background color on hover */
+    background-color: white; /* Background color on hover */
     color: black; /* Text color on hover */
 }
 
 .menu {
     text-align: left;
+    margin-left: 30px;
 }
 
-body {
-    background-image: url('/static/mail.jpg');
-    background-size: cover;
+.login {
+    margin-right: 30px;
 }
+main {
+    background-color: #dee2e6;
+}
+
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px; /* Add space around the content in the footer */
+    display: flex; /* Display the company details and social media icons side by side */
+    justify-content: space-between; /* Push them to opposite ends of the footer */
+    align-items: center; /* Vertically align content in the center */
+}
+
+/* Style for the company details section */
+.company-details {
+    text-align: left;
+}
+
+.company-details h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Style for the images within social media links */
+.social-media img {
+    width: 30px; /* Adjust the size of the icons as needed */
+    height: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack elements on top of each other for smaller screens */
+    }
+
+    .company-details {
+        text-align: center; /* Center text on smaller screens */
+        margin-bottom: 10px; /* Add spacing between sections */
+    }
+
+    .social-media {
+        text-align: center; /* Add spacing between icons */
+        color: #fff; /* Text color for the links */
+    }
+}
+
+.upload {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh; 
+}
+
+/* Style the card container */
+.card {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 10px;
+  }
+  
+  /* Style the card image */
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Style the card content */
+  .card-content {
+    padding: 16px;
+  }
+  
+  /* Style the card title */
+  .card-content h3 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Style the card text */
+  .card-content p {
+    font-size: 1em;
+    margin: 8px 0;
+    text-align: center;
+  }
+  
+  .container button {
+    display: inline-block;
+    /* Any additional styles for the button */
+  }
